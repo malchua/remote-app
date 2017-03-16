@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">RemoteApp</string>
+    <string name="app_name">Remote Application</string>
+
+    <string name="layered_design_button">1. Multiple Screen Design</string>
+    <string name="iphone_design_button">2. iPhone Design</string>
+    <string name="design_prompt">Choose a design:</string>
+    <string name="title_layered_design">Layered Design</string>
+    <string name="title_iphone_design">iPhone Design</string>
+
 </resources>

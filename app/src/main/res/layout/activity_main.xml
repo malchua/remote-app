@@ -9,8 +9,32 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.meghanchua.remoteapp.MainActivity">
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/layered_design_button"
+        android:id="@+id/layeredDesignButton"
+        android:layout_marginBottom="45dp"
+        android:layout_above="@+id/iphoneDesignButton"
+        android:layout_centerHorizontal="true"
+        android:onClick="buttonOnClickLayeredDesign" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/iphone_design_button"
+        android:id="@+id/iphoneDesignButton"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="buttonOnClickIphoneDesign" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/design_prompt"
+        android:id="@+id/header"
+        android:layout_above="@+id/layeredDesignButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="47dp" />
 </RelativeLayout>
