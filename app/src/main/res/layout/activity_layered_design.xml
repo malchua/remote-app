@@ -15,18 +15,19 @@
         android:text="@string/menu"
         android:id="@+id/menu"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/menu_remote"
         android:id="@+id/menu_remote"
-        android:layout_below="@+id/menu"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="22dp"
         android:width="100dp"
-        android:height="20dp" />
+        android:height="20dp"
+        android:layout_above="@+id/menu_guide"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="39dp" />
 
     <Button
         android:layout_width="wrap_content"
