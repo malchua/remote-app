@@ -12,10 +12,42 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/title_layered_design"
-        android:id="@+id/textView2"
-        android:layout_marginTop="63dp"
+        android:text="@string/menu"
+        android:id="@+id/menu"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_remote"
+        android:id="@+id/menu_remote"
+        android:layout_below="@+id/menu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:width="100dp"
+        android:height="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_guide"
+        android:id="@+id/menu_guide"
+        android:layout_marginBottom="40dp"
+        android:layout_above="@+id/menu_playback"
+        android:layout_alignLeft="@+id/menu_remote"
+        android:layout_alignStart="@+id/menu_remote"
+        android:width="100dp"
+        android:height="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_playback"
+        android:id="@+id/menu_playback"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/menu_guide"
+        android:layout_alignStart="@+id/menu_guide"
+        android:width="100dp"
+        android:height="20dp" />
 </RelativeLayout>

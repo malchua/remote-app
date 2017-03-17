@@ -7,4 +7,10 @@
     <string name="title_layered_design">Layered Design</string>
     <string name="title_iphone_design">iPhone Design</string>
 
+    <!-- Layered Design strings -->
+    <string name="menu">Menu</string>
+    <string name="menu_remote">Remote</string>
+    <string name="menu_guide">Guide</string>
+    <string name="menu_playback">Playback</string>
+
 </resources>
