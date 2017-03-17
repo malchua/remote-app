@@ -27,7 +27,8 @@
         android:height="20dp"
         android:layout_above="@+id/menu_guide"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="39dp" />
+        android:layout_marginBottom="39dp"
+        android:onClick="buttonOnClickRemote" />
 
     <Button
         android:layout_width="wrap_content"
@@ -39,7 +40,8 @@
         android:layout_alignLeft="@+id/menu_remote"
         android:layout_alignStart="@+id/menu_remote"
         android:width="100dp"
-        android:height="20dp" />
+        android:height="20dp"
+        android:onClick="buttonOnClickGuide"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -50,5 +52,6 @@
         android:layout_alignLeft="@+id/menu_guide"
         android:layout_alignStart="@+id/menu_guide"
         android:width="100dp"
-        android:height="20dp" />
+        android:height="20dp"
+        android:onClick="buttonOnClickPlayback" />
 </RelativeLayout>
