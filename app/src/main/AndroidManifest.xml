@@ -35,7 +35,8 @@
         </activity>
         <activity android:name=".LayeredMain" />
         <activity android:name=".LayeredGuide" />
-        <activity android:name=".LayeredPlayback"></activity>
+        <activity android:name=".LayeredPlayback" />
+        <activity android:name=".HelpScreen"></activity>
     </application>
 
 </manifest>

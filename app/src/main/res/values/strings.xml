@@ -32,10 +32,16 @@
     <string name="button8">8</string>
     <string name="button9">9</string>
 
+    <!-- Help menu strings -->
+    <string name="help1">How to record a program</string>
+    <string name="help2">How to use playback function</string>
+    <string name="help3">How to use guide</string>
+
     <!-- Layered Design strings -->
     <string name="menu">Menu</string>
-    <string name="menu_remote">Remote</string>
-    <string name="menu_guide">Guide</string>
-    <string name="menu_playback">Playback</string>
+    <string name="menu_remote">REMOTE</string>
+    <string name="menu_guide">GUIDE</string>
+    <string name="menu_playback">PLAYBACK</string>
+    <string name="menu_help">HELP</string>
 
 </resources>
