@@ -33,7 +33,8 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-        <activity android:name=".LayeredMain"></activity>
+        <activity android:name=".LayeredMain" />
+        <activity android:name=".LayeredGuide"></activity>
     </application>
 
 </manifest>

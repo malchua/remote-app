@@ -13,6 +13,10 @@
     <string name="channel_text">CHANNEL</string>
     <string name="up_text">UP</string>
     <string name="down_text">DOWN</string>
+    <string name="left_text">LEFT</string>
+    <string name="right_text">RIGHT</string>
+    <string name="select_text">SELECT</string>
+    <string name="record_text">RECORD</string>
     <string name="button1">1</string>
     <string name="button2">2</string>
     <string name="button3">3</string>
