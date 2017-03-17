@@ -17,6 +17,11 @@
     <string name="right_text">RIGHT</string>
     <string name="select_text">SELECT</string>
     <string name="record_text">RECORD</string>
+    <string name="rewind_text">REWIND</string>
+    <string name="forward_text">FORWARD</string>
+    <string name="pause_text">PAUSE</string>
+    <string name="play_text">PLAY</string>
+    <string name="stop_text">STOP</string>
     <string name="button1">1</string>
     <string name="button2">2</string>
     <string name="button3">3</string>
