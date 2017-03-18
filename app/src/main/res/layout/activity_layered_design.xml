@@ -16,42 +16,59 @@
         android:id="@+id/menu"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:textSize="25sp"/>
+        android:textSize="50sp"/>
 
-    <Button
-        android:layout_width="wrap_content"
+    <GridLayout
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/menu_remote"
-        android:id="@+id/menu_remote"
-        android:width="100dp"
-        android:height="20dp"
-        android:layout_above="@+id/menu_guide"
+        android:layout_below="@+id/menu"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="39dp"
-        android:onClick="buttonOnClickRemote" />
+        android:layout_marginTop="74dp">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/menu_guide"
-        android:id="@+id/menu_guide"
-        android:layout_marginBottom="40dp"
-        android:layout_above="@+id/menu_playback"
-        android:layout_alignLeft="@+id/menu_remote"
-        android:layout_alignStart="@+id/menu_remote"
-        android:width="100dp"
-        android:height="20dp"
-        android:onClick="buttonOnClickGuide"/>
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:text="@string/menu_remote"
+            android:id="@+id/menu_remote"
+            android:width="100dp"
+            android:height="20dp"
+            android:layout_above="@+id/menu_guide"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="39dp"
+            android:onClick="buttonOnClickRemote"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:textSize="50sp"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/menu_playback"
-        android:id="@+id/menu_playback"
-        android:layout_centerVertical="true"
-        android:layout_alignLeft="@+id/menu_guide"
-        android:layout_alignStart="@+id/menu_guide"
-        android:width="100dp"
-        android:height="20dp"
-        android:onClick="buttonOnClickPlayback" />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:text="@string/menu_guide"
+            android:id="@+id/menu_guide"
+            android:layout_marginBottom="40dp"
+            android:layout_above="@+id/menu_playback"
+            android:layout_alignLeft="@+id/menu_remote"
+            android:layout_alignStart="@+id/menu_remote"
+            android:width="100dp"
+            android:height="20dp"
+            android:onClick="buttonOnClickGuide"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:textSize="50sp"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:text="@string/menu_playback"
+            android:id="@+id/menu_playback"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/menu_guide"
+            android:layout_alignStart="@+id/menu_guide"
+            android:width="100dp"
+            android:height="20dp"
+            android:onClick="buttonOnClickPlayback"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:textSize="50sp"/>
+    </GridLayout>
 </RelativeLayout>

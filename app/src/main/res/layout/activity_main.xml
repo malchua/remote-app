@@ -10,7 +10,7 @@
     tools:context="com.example.meghanchua.remoteapp.MainActivity">
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/layered_design_button"
         android:id="@+id/layeredDesignButton"
@@ -20,7 +20,7 @@
         android:onClick="buttonOnClickLayeredDesign" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/iphone_design_button"
         android:id="@+id/iphoneDesignButton"
