@@ -38,7 +38,7 @@
         android:layout_toRightOf="@+id/layered_guide"
         android:layout_toEndOf="@+id/layered_guide"
         android:layout_marginTop="28dp"
-        android:textSize="20sp"/>
+        android:textSize="21sp"/>
 
     <GridLayout
         android:layout_width="wrap_content"
