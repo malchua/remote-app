@@ -33,6 +33,7 @@
         android:layout_width="80dip"
         android:layout_height="80dip"
         android:src="@drawable/record"
+        android:background="?android:attr/selectableItemBackground"
         android:scaleType="fitCenter"
         android:id="@+id/layered_record"
         android:layout_below="@+id/layered_guide"

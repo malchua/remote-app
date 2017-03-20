@@ -116,7 +116,8 @@
         android:scaleType="fitCenter"
         android:layout_above="@+id/volume_up"
         android:layout_centerHorizontal="true"
-        android:contentDescription="@string/button_power"/>
+        android:contentDescription="@string/button_power"
+        android:background="?android:attr/selectableItemBackground"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -136,7 +137,8 @@
         android:layout_alignTop="@+id/channel_up"
         android:layout_alignLeft="@+id/gridLayout"
         android:layout_alignStart="@+id/gridLayout"
-        android:contentDescription="@string/up_text"/>
+        android:contentDescription="@string/up_text"
+        android:backgroundTint="@color/colorPrimary"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -159,7 +161,8 @@
         android:layout_alignTop="@+id/channel_down"
         android:layout_alignLeft="@+id/gridLayout"
         android:layout_alignStart="@+id/gridLayout"
-        android:contentDescription="@string/down_text"/>
+        android:contentDescription="@string/down_text"
+        android:backgroundTint="@color/colorPrimary"/>
 
     <ImageButton
         android:layout_width="60dip"
@@ -170,7 +173,8 @@
         android:layout_above="@+id/textView2"
         android:layout_alignRight="@+id/gridLayout"
         android:layout_alignEnd="@+id/gridLayout"
-        android:contentDescription="@string/up_text"/>
+        android:contentDescription="@string/up_text"
+        android:backgroundTint="@color/colorPrimary"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -194,6 +198,7 @@
         android:layout_above="@+id/gridLayout"
         android:layout_alignLeft="@+id/channel_up"
         android:layout_alignStart="@+id/channel_up"
-        android:contentDescription="@string/down_text"/>
+        android:contentDescription="@string/down_text"
+        android:backgroundTint="@color/colorPrimary"/>
 
 </RelativeLayout>

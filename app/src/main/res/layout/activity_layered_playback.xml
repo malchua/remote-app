@@ -152,7 +152,8 @@
         android:layout_below="@+id/gridLayout2"
         android:layout_alignLeft="@+id/layered_playback"
         android:layout_alignStart="@+id/layered_playback"
-        android:contentDescription="@string/record_text"/>
+        android:contentDescription="@string/record_text"
+        android:background="?android:attr/selectableItemBackground"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -174,7 +175,8 @@
         android:layout_alignTop="@+id/gridLayout2"
         android:layout_alignRight="@+id/layered_playback"
         android:layout_alignEnd="@+id/layered_playback"
-        android:contentDescription="@string/up_text"/>
+        android:contentDescription="@string/up_text"
+        android:backgroundTint="@color/colorPrimary"/>
 
     <ImageButton
         android:layout_width="60dip"
@@ -186,6 +188,7 @@
         android:layout_alignRight="@+id/layered_playback"
         android:layout_alignEnd="@+id/layered_playback"
         android:textSize="20sp"
-        android:contentDescription="@string/down_text"/>
+        android:contentDescription="@string/down_text"
+        android:backgroundTint="@color/colorPrimary"/>
 
 </RelativeLayout>
