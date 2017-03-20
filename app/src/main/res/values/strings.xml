@@ -9,8 +9,8 @@
 
     <!-- Generic button strings -->
     <string name="button_power">POWER</string>
-    <string name="volume_text">VOLUME</string>
-    <string name="channel_text">CHANNEL</string>
+    <string name="volume_text">VOL</string>
+    <string name="channel_text">CH</string>
     <string name="up_text">UP</string>
     <string name="down_text">DOWN</string>
     <string name="left_text">LEFT</string>
