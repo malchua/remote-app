@@ -1,7 +1,9 @@
 package com.example.meghanchua.remoteapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 public class LayeredMain extends AppCompatActivity {
 
@@ -9,5 +11,19 @@ public class LayeredMain extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_layered_main);
+    }
+
+    public void buttonOnClickMainMenu(View view) {
+        Intent mainMenuIntent = new Intent(LayeredMain.this, LayeredDesignActivity.class);
+        LayeredMain.this.startActivity(mainMenuIntent);
+    }
+
+    public void buttonOnClickHelp(View view) {
+        Intent helpIntent = new Intent(LayeredMain.this, HelpScreen.class);
+        LayeredMain.this.startActivity(helpIntent);
+    }
+
+    public void buttonOnClickBack(View view) {
+        LayeredMain.this.finish();
     }
 }

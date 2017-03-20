@@ -43,5 +43,6 @@
     <string name="menu_guide">GUIDE</string>
     <string name="menu_playback">PLAYBACK</string>
     <string name="menu_help">HELP</string>
+    <string name="back">BACK</string>
 
 </resources>
