@@ -47,6 +47,10 @@
     <string name="menu_help">HELP</string>
     <string name="back">BACK</string>
 
+    <!-- Layered Design Tutorial strings -->
+    <string name="layered_main_tutorial">tutorial1</string>
+
+
     <!-- iPhone Design strings -->
     <string name="panel_text">PANEL</string>
     <string name="help_text">HELP</string>
