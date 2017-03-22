@@ -142,7 +142,7 @@
         android:scaleType="fitCenter"
         android:contentDescription="@string/button_power"
         android:background="?android:attr/selectableItemBackground"
-        android:layout_above="@+id/volume_up"
+        android:layout_above="@+id/volume_down"
         android:layout_centerHorizontal="true" />
 
     <TextView

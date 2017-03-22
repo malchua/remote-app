@@ -47,4 +47,10 @@
     <string name="menu_help">HELP</string>
     <string name="back">BACK</string>
 
+    <!-- iPhone Design strings -->
+    <string name="panel_text">PANEL</string>
+    <string name="help_text">HELP</string>
+    <string name="edit_text">EDIT</string>
+    <string name="back_text">BACK</string>
+
 </resources>
