@@ -52,5 +52,6 @@
     <string name="help_text">HELP</string>
     <string name="edit_text">EDIT</string>
     <string name="back_text">BACK</string>
+    <string name="recordtv_text">RECORDED TV</string>
 
 </resources>

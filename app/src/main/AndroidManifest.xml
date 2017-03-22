@@ -36,7 +36,8 @@
         <activity android:name=".LayeredMain" />
         <activity android:name=".LayeredGuide" />
         <activity android:name=".LayeredPlayback" />
-        <activity android:name=".HelpScreen"></activity>
+        <activity android:name=".HelpScreen" />
+        <activity android:name=".IphoneDesign2"></activity>
     </application>
 
 </manifest>
