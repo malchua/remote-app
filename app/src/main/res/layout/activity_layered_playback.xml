@@ -23,13 +23,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/gridLayout3"
-        android:layout_marginTop="44dp"
-        android:layout_below="@+id/textView5"
-        android:layout_centerHorizontal="true">
+        android:layout_below="@+id/button_down"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp">
 
         <ImageButton
-            android:layout_width="70dip"
-            android:layout_height="60dip"
+            android:layout_width="80dip"
+            android:layout_height="70dip"
             android:src="@drawable/rewind"
             android:scaleType="fitCenter"
             android:id="@+id/button_rewind"
@@ -40,8 +40,8 @@
 
         <ImageButton
             android:id="@+id/button_pause"
-            android:layout_width="70dip"
-            android:layout_height="60dip"
+            android:layout_width="80dip"
+            android:layout_height="70dip"
             android:layout_column="1"
             android:layout_row="0"
             android:scaleType="fitCenter"
@@ -50,8 +50,8 @@
 
         <ImageButton
             android:id="@+id/button_forward"
-            android:layout_width="70dip"
-            android:layout_height="60dip"
+            android:layout_width="80dip"
+            android:layout_height="70dip"
             android:layout_column="2"
             android:layout_row="0"
             android:scaleType="fitCenter"
@@ -65,8 +65,8 @@
             android:text="@string/rewind_text"
             android:layout_column="0"
             android:layout_row="1"
-            android:layout_marginLeft="9dp"
-            android:layout_marginStart="9dp"/>
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -74,8 +74,8 @@
             android:text="@string/pause_text"
             android:layout_column="1"
             android:layout_row="1"
-            android:layout_marginLeft="13dp"
-            android:layout_marginStart="13dp"/>
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -83,12 +83,12 @@
             android:text="@string/forward_text"
             android:layout_column="2"
             android:layout_row="1"
-            android:layout_marginLeft="2dp"
-            android:layout_marginStart="2dp"/>
+            android:layout_marginLeft="7dp"
+            android:layout_marginStart="7dp"/>
 
         <ImageButton
-            android:layout_width="70dip"
-            android:layout_height="60dip"
+            android:layout_width="80dip"
+            android:layout_height="70dip"
             android:src="@drawable/stop"
             android:scaleType="fitCenter"
             android:id="@+id/button_stop"
@@ -99,8 +99,8 @@
             android:contentDescription="@string/stop_text"/>
 
         <ImageButton
-            android:layout_width="70dip"
-            android:layout_height="60dip"
+            android:layout_width="80dip"
+            android:layout_height="70dip"
             android:src="@drawable/play"
             android:scaleType="fitCenter"
             android:id="@+id/button_play"
@@ -117,8 +117,8 @@
             android:layout_column="0"
             android:layout_row="3"
             android:layout_columnSpan="2"
-            android:layout_marginLeft="50dp"
-            android:layout_marginStart="50dp"/>
+            android:layout_marginLeft="60dp"
+            android:layout_marginStart="60dp"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -127,8 +127,8 @@
             android:layout_column="1"
             android:layout_row="3"
             android:layout_columnSpan="2"
-            android:layout_marginLeft="50dp"
-            android:layout_marginStart="50dp"/>
+            android:layout_marginLeft="60dp"
+            android:layout_marginStart="60dp"/>
 
     </GridLayout>
 
@@ -143,53 +143,44 @@
 
     </GridLayout>
 
-    <ImageButton
-        android:layout_width="80dip"
-        android:layout_height="80dip"
-        android:src="@drawable/record"
+    <Button
+        android:layout_width="90dip"
+        android:layout_height="90dip"
+        android:text="@string/delete_text"
         android:scaleType="fitCenter"
         android:id="@+id/button_record"
-        android:layout_below="@+id/gridLayout2"
-        android:layout_alignLeft="@+id/layered_playback"
-        android:layout_alignStart="@+id/layered_playback"
         android:contentDescription="@string/record_text"
-        android:background="?android:attr/selectableItemBackground"/>
+        android:layout_below="@+id/gridLayout2"
+        android:layout_alignLeft="@+id/gridLayout3"
+        android:layout_alignStart="@+id/gridLayout3"
+        android:backgroundTint="@color/colorAccent"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/record_text"
-        android:textSize="20sp"
-        android:id="@+id/textView5"
-        android:layout_below="@+id/button_record"
-        android:layout_alignRight="@+id/button_record"
-        android:layout_alignEnd="@+id/button_record"
-        android:layout_marginTop="6dp" />
+
 
     <ImageButton
-        android:layout_width="60dip"
-        android:layout_height="60dip"
-        android:src="@drawable/arrow_up"
+        android:layout_width="70dip"
+        android:layout_height="70dip"
+        android:src="@drawable/triangle_up"
         android:scaleType="fitCenter"
         android:id="@+id/button_up"
-        android:layout_alignTop="@+id/gridLayout2"
-        android:layout_alignRight="@+id/layered_playback"
-        android:layout_alignEnd="@+id/layered_playback"
         android:contentDescription="@string/up_text"
-        android:backgroundTint="@color/colorPrimary"/>
+        android:layout_alignTop="@+id/gridLayout2"
+        android:layout_alignLeft="@+id/button_down"
+        android:layout_alignStart="@+id/button_down" />
 
     <ImageButton
-        android:layout_width="60dip"
-        android:layout_height="60dip"
-        android:src="@drawable/arrow_down"
+        android:layout_width="70dip"
+        android:layout_height="70dip"
+        android:src="@drawable/triangle_down"
         android:scaleType="fitCenter"
         android:id="@+id/button_down"
-        android:layout_below="@+id/button_up"
-        android:layout_alignRight="@+id/layered_playback"
-        android:layout_alignEnd="@+id/layered_playback"
         android:textSize="20sp"
         android:contentDescription="@string/down_text"
-        android:backgroundTint="@color/colorPrimary"/>
+        android:layout_below="@+id/button_up"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="61dp"
+        android:layout_marginEnd="61dp" />
 
     <Button
         android:id="@+id/main_menu"

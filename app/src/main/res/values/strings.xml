@@ -8,6 +8,7 @@
     <string name="title_iphone_design">iPhone Design</string>
 
     <!-- Generic button strings -->
+    <string name="button_main_menu">MAIN MENU</string>
     <string name="button_power">POWER</string>
     <string name="volume_text">VOL</string>
     <string name="channel_text">CH</string>
@@ -22,6 +23,7 @@
     <string name="pause_text">PAUSE</string>
     <string name="play_text">PLAY</string>
     <string name="stop_text">STOP</string>
+    <string name="delete_text">DELETE</string>
     <string name="button1">1</string>
     <string name="button2">2</string>
     <string name="button3">3</string>
