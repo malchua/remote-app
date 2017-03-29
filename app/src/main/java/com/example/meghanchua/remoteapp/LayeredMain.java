@@ -16,14 +16,16 @@ public class LayeredMain extends AppCompatActivity {
     public void buttonOnClickMainMenu(View view) {
         Intent mainMenuIntent = new Intent(LayeredMain.this, LayeredDesignActivity.class);
         LayeredMain.this.startActivity(mainMenuIntent);
+        finish();
     }
 
     public void buttonOnClickHelp(View view) {
         Intent helpIntent = new Intent(LayeredMain.this, LayeredHelpScreen.class);
         LayeredMain.this.startActivity(helpIntent);
+        finish();
     }
 
     public void buttonOnClickBack(View view) {
-        LayeredMain.this.finish();
+        //LayeredMain.this.finish();
     }
 }

@@ -63,17 +63,14 @@
         android:id="@+id/menu_playback"
         android:layout_width="fill_parent"
         android:layout_height="100dp"
-        android:layout_above="@+id/main_menu"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="48dp"
-        android:layout_marginLeft="9dp"
-        android:layout_marginStart="9dp"
         android:width="100dp"
         android:height="20dp"
         android:onClick="buttonOnClickPlayback"
         android:text="@string/menu_playback"
-        android:textSize="50sp" />
+        android:textSize="50sp"
+        android:layout_below="@+id/menu_guide"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp" />
 
     <Button
         android:id="@+id/menu_guide"

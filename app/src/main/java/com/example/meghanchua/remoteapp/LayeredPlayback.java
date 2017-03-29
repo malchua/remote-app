@@ -16,14 +16,16 @@ public class LayeredPlayback extends AppCompatActivity {
     public void buttonOnClickMainMenu(View view) {
         Intent mainMenuIntent = new Intent(LayeredPlayback.this, LayeredDesignActivity.class);
         LayeredPlayback.this.startActivity(mainMenuIntent);
+        finish();
     }
 
     public void buttonOnClickHelp(View view) {
         Intent helpIntent = new Intent(LayeredPlayback.this, LayeredHelpScreen.class);
         LayeredPlayback.this.startActivity(helpIntent);
+        finish();
     }
 
     public void buttonOnClickBack(View view) {
-        LayeredPlayback.this.finish();
+        //LayeredPlayback.this.finish();
     }
 }

@@ -16,7 +16,7 @@ public class IphoneDesignActivity extends AppCompatActivity {
     public void buttonOnClickIphoneDesign2(View view) {
         Intent iphoneDesign2Intent = new Intent(IphoneDesignActivity.this, IphoneDesign2.class);
         IphoneDesignActivity.this.startActivity(iphoneDesign2Intent);
-
+        finish();
     }
 
     public void buttonOnClickHelpScreen1(View view) {

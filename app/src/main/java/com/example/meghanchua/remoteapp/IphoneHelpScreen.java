@@ -20,15 +20,18 @@ public class IphoneHelpScreen extends AppCompatActivity {
     public void guidehelp(View view) {
         Intent i = new Intent(IphoneHelpScreen.this, IphoneGuideTutorial1.class);
         IphoneHelpScreen.this.startActivity(i);
+        finish();
     }
 
     public void playbackhelp(View view) {
         Intent i = new Intent(IphoneHelpScreen.this, IphonePlaybackTutorial1.class);
         IphoneHelpScreen.this.startActivity(i);
+        finish();
     }
 
     public void recordhelp(View view) {
         Intent i = new Intent(IphoneHelpScreen.this, IphoneRecordTutorial1.class);
         IphoneHelpScreen.this.startActivity(i);
+        finish();
     }
 }

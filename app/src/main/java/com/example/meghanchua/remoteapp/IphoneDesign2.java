@@ -16,12 +16,11 @@ public class IphoneDesign2 extends AppCompatActivity {
     public void buttonOnClickIphoneDesign(View view) {
         Intent iphoneDesignActivityIntent = new Intent(IphoneDesign2.this, IphoneDesignActivity.class);
         IphoneDesign2.this.startActivity(iphoneDesignActivityIntent);
-
+        finish();
     }
 
     public void buttonOnClickHelpScreen2(View view) {
         Intent iphoneDesignActivityIntent = new Intent(IphoneDesign2.this, IphoneHelpScreen.class);
         IphoneDesign2.this.startActivity(iphoneDesignActivityIntent);
-
     }
 }

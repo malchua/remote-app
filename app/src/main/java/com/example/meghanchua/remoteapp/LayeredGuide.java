@@ -16,14 +16,16 @@ public class LayeredGuide extends AppCompatActivity {
     public void buttonOnClickMainMenu(View view) {
         Intent mainMenuIntent = new Intent(LayeredGuide.this, LayeredDesignActivity.class);
         LayeredGuide.this.startActivity(mainMenuIntent);
+        finish();
     }
 
     public void buttonOnClickHelp(View view) {
         Intent helpIntent = new Intent(LayeredGuide.this, LayeredHelpScreen.class);
         LayeredGuide.this.startActivity(helpIntent);
+        finish();
     }
 
     public void buttonOnClickBack(View view) {
-        LayeredGuide.this.finish();
+        //LayeredGuide.this.finish();
     }
 }

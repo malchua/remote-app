@@ -16,29 +16,34 @@ public class LayeredDesignActivity extends AppCompatActivity {
     public void buttonOnClickRemote(View view) {
         Intent remoteIntent = new Intent(LayeredDesignActivity.this, LayeredMain.class);
         LayeredDesignActivity.this.startActivity(remoteIntent);
+        finish();
     }
 
     public void buttonOnClickGuide(View view) {
         Intent guideIntent = new Intent(LayeredDesignActivity.this, LayeredGuide.class);
         LayeredDesignActivity.this.startActivity(guideIntent);
+        finish();
     }
 
     public void buttonOnClickPlayback(View view) {
         Intent playbackIntent = new Intent(LayeredDesignActivity.this, LayeredPlayback.class);
         LayeredDesignActivity.this.startActivity(playbackIntent);
+        finish();
     }
 
     public void buttonOnClickMainMenu(View view) {
-        Intent mainMenuIntent = new Intent(LayeredDesignActivity.this, MainActivity.class);
+        /*Intent mainMenuIntent = new Intent(LayeredDesignActivity.this, MainActivity.class);
         LayeredDesignActivity.this.startActivity(mainMenuIntent);
+        finish();*/
     }
 
     public void buttonOnClickHelp(View view) {
         Intent helpIntent = new Intent(LayeredDesignActivity.this, LayeredHelpScreen.class);
         LayeredDesignActivity.this.startActivity(helpIntent);
+        finish();
     }
 
     public void buttonOnClickBack(View view) {
-        LayeredDesignActivity.this.finish();
+        //LayeredDesignActivity.this.finish();
     }
 }
