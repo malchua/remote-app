@@ -37,7 +37,11 @@
         <activity android:name=".LayeredGuide" />
         <activity android:name=".LayeredPlayback" />
         <activity android:name=".HelpScreen" />
-        <activity android:name=".IphoneDesign2"></activity>
+        <activity android:name=".IphoneDesign2" />
+        <activity android:name=".LayeredTutorial1" />
+        <activity android:name=".LayeredTutorial2" />
+        <activity android:name=".LayeredTutorial3" />
+        <activity android:name=".LayeredTutorial4"></activity>
     </application>
 
 </manifest>

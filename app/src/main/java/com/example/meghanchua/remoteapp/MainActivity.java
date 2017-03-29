@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void buttonOnClickLayeredDesign(View view) {
-        Intent layeredDesignIntent = new Intent(MainActivity.this, LayeredDesignActivity.class);
+        Intent layeredDesignIntent = new Intent(MainActivity.this, LayeredTutorial1.class);
         MainActivity.this.startActivity(layeredDesignIntent);
     }
 

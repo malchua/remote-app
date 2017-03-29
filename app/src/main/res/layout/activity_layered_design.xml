@@ -67,13 +67,13 @@
 
     <Button
         android:id="@+id/main_menu"
-        android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:onClick="buttonOnClickMainMenu"
-        android:text="@string/button_main_menu"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:onClick="buttonOnClickMainMenu"
+        android:text="@string/menu" />
 
     <Button
         android:id="@+id/help"
