@@ -23,7 +23,7 @@ public class IphoneHelpScreen extends AppCompatActivity {
     }
 
     public void playbackhelp(View view) {
-        Intent i = new Intent(IphoneHelpScreen.this, LayeredPlaybackTutorial1.class);
+        Intent i = new Intent(IphoneHelpScreen.this, IphonePlaybackTutorial1.class);
         IphoneHelpScreen.this.startActivity(i);
     }
 
