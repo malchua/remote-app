@@ -41,7 +41,18 @@
         <activity android:name=".LayeredTutorial1" />
         <activity android:name=".LayeredTutorial2" />
         <activity android:name=".LayeredTutorial3" />
-        <activity android:name=".LayeredTutorial4"></activity>
+        <activity android:name=".LayeredTutorial4" />
+        <activity android:name=".LayeredGuideTutorial1" />
+        <activity android:name=".LayeredGuideTutorial2" />
+        <activity android:name=".LayeredGuideTutorial3" />
+        <activity android:name=".LayeredPlaybackTutorial1" />
+        <activity android:name=".LayeredPlaybackTutorial2" />
+        <activity android:name=".LayeredPlaybackTutorial3" />
+        <activity android:name=".LayeredPlaybackTutorial4" />
+        <activity android:name=".LayeredPlaybackTutorial5" />
+        <activity android:name=".LayeredRecordTutorial1" />
+        <activity android:name=".LayeredRecordTutorial2" />
+        <activity android:name=".LayeredRecordTutorial3"></activity>
     </application>
 
 </manifest>

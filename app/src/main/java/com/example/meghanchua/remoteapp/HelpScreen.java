@@ -21,4 +21,19 @@ public class HelpScreen extends AppCompatActivity {
     public void buttonOnClickBack(View view) {
         HelpScreen.this.finish();
     }
+
+    public void guidehelp(View view) {
+        Intent i = new Intent(HelpScreen.this, LayeredGuideTutorial1.class);
+        HelpScreen.this.startActivity(i);
+    }
+
+    public void playbackhelp(View view) {
+        Intent i = new Intent(HelpScreen.this, LayeredPlaybackTutorial1.class);
+        HelpScreen.this.startActivity(i);
+    }
+
+    public void recordhelp(View view) {
+        Intent i = new Intent(HelpScreen.this, LayeredRecordTutorial1.class);
+        HelpScreen.this.startActivity(i);
+    }
 }
