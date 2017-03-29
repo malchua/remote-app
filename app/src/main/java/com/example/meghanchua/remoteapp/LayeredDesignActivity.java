@@ -34,7 +34,7 @@ public class LayeredDesignActivity extends AppCompatActivity {
     }
 
     public void buttonOnClickHelp(View view) {
-        Intent helpIntent = new Intent(LayeredDesignActivity.this, HelpScreen.class);
+        Intent helpIntent = new Intent(LayeredDesignActivity.this, LayeredHelpScreen.class);
         LayeredDesignActivity.this.startActivity(helpIntent);
     }
 

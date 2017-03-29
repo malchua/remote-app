@@ -15,9 +15,11 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/menu_playback"
         android:id="@+id/layered_playback"
+        android:textSize="30sp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:textSize="40sp"/>
+        android:layout_toLeftOf="@+id/main_menu"
+        android:layout_toStartOf="@+id/main_menu"
+        android:layout_marginTop="6dp" />
 
     <GridLayout
         android:layout_width="wrap_content"

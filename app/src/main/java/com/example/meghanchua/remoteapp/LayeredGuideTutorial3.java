@@ -14,7 +14,7 @@ public class LayeredGuideTutorial3 extends AppCompatActivity {
     }
 
     public void t1(View view) {
-        Intent i = new Intent(LayeredGuideTutorial3.this, HelpScreen.class);
+        Intent i = new Intent(LayeredGuideTutorial3.this, LayeredHelpScreen.class);
         LayeredGuideTutorial3.this.startActivity(i);
         finish();
     }

@@ -19,7 +19,7 @@ public class LayeredPlayback extends AppCompatActivity {
     }
 
     public void buttonOnClickHelp(View view) {
-        Intent helpIntent = new Intent(LayeredPlayback.this, HelpScreen.class);
+        Intent helpIntent = new Intent(LayeredPlayback.this, LayeredHelpScreen.class);
         LayeredPlayback.this.startActivity(helpIntent);
     }
 

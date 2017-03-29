@@ -19,7 +19,7 @@ public class LayeredMain extends AppCompatActivity {
     }
 
     public void buttonOnClickHelp(View view) {
-        Intent helpIntent = new Intent(LayeredMain.this, HelpScreen.class);
+        Intent helpIntent = new Intent(LayeredMain.this, LayeredHelpScreen.class);
         LayeredMain.this.startActivity(helpIntent);
     }
 
