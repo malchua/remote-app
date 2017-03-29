@@ -16,5 +16,6 @@ public class LayeredRecordTutorial1 extends AppCompatActivity {
     public void t1(View view) {
         Intent i = new Intent(LayeredRecordTutorial1.this, LayeredRecordTutorial2.class);
         LayeredRecordTutorial1.this.startActivity(i);
+        finish();
     }
 }

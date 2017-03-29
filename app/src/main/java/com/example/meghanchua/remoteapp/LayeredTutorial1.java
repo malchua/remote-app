@@ -16,5 +16,6 @@ public class LayeredTutorial1 extends AppCompatActivity {
     public void t1(View view) {
         Intent i = new Intent(LayeredTutorial1.this, LayeredTutorial2.class);
         LayeredTutorial1.this.startActivity(i);
+        finish();
     }
 }

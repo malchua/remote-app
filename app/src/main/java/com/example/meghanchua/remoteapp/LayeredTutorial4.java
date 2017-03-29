@@ -16,5 +16,6 @@ public class LayeredTutorial4 extends AppCompatActivity {
     public void t4(View view) {
         Intent i = new Intent(LayeredTutorial4.this, LayeredDesignActivity.class);
         LayeredTutorial4.this.startActivity(i);
+        finish();
     }
 }

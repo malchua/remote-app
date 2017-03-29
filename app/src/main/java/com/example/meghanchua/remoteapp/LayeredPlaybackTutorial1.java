@@ -16,5 +16,6 @@ public class LayeredPlaybackTutorial1 extends AppCompatActivity {
     public void t1(View view) {
         Intent i = new Intent(LayeredPlaybackTutorial1.this, LayeredPlaybackTutorial2.class);
         LayeredPlaybackTutorial1.this.startActivity(i);
+        finish();
     }
 }
