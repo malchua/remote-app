@@ -27,5 +27,8 @@ public class LayeredGuide extends AppCompatActivity {
 
     public void buttonOnClickBack(View view) {
         //LayeredGuide.this.finish();
+        Intent i = new Intent(LayeredGuide.this, LayeredDesignActivity.class);
+        LayeredGuide.this.startActivity(i);
+        finish();
     }
 }

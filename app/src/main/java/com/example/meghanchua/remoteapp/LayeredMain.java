@@ -27,5 +27,8 @@ public class LayeredMain extends AppCompatActivity {
 
     public void buttonOnClickBack(View view) {
         //LayeredMain.this.finish();
+        Intent i = new Intent(LayeredMain.this, LayeredDesignActivity.class);
+        LayeredMain.this.startActivity(i);
+        finish();
     }
 }

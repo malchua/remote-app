@@ -27,5 +27,8 @@ public class LayeredPlayback extends AppCompatActivity {
 
     public void buttonOnClickBack(View view) {
         //LayeredPlayback.this.finish();
+        Intent i = new Intent(LayeredPlayback.this, LayeredDesignActivity.class);
+        LayeredPlayback.this.startActivity(i);
+        finish();
     }
 }
