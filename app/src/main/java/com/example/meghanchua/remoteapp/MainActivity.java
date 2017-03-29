@@ -14,12 +14,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void buttonOnClickLayeredDesign(View view) {
-        Intent layeredDesignIntent = new Intent(MainActivity.this, LayeredTutorial1.class);
+        Intent layeredDesignIntent = new Intent(MainActivity.this, LayeredTutorial0.class);
         MainActivity.this.startActivity(layeredDesignIntent);
     }
 
     public void buttonOnClickIphoneDesign(View view) {
-        Intent iphoneDesignIntent = new Intent(MainActivity.this, IphoneDesignActivity.class);
+        Intent iphoneDesignIntent = new Intent(MainActivity.this, IphoneTutorial1.class);
         MainActivity.this.startActivity(iphoneDesignIntent);
 
     }
