@@ -35,6 +35,7 @@
         android:layout_width="110dp"
         android:layout_height="wrap_content"
         android:text="@string/help_text"
+        android:onClick="buttonOnClickHelpScreen2"
         android:textSize="18sp"
         android:layout_alignBaseline="@+id/button11"
         android:layout_alignBottom="@+id/button11"

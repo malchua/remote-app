@@ -57,7 +57,11 @@
         <activity android:name=".IphoneTutorial1" />
         <activity android:name=".IphoneTutorial2" />
         <activity android:name=".IphoneTutorial3" />
-        <activity android:name=".IphoneTutorial4"></activity>
+        <activity android:name=".IphoneTutorial4" />
+        <activity android:name=".IphoneHelpScreen" />
+        <activity android:name=".IphoneGuideTutorial1" />
+        <activity android:name=".IphoneGuideTutorial2" />
+        <activity android:name=".IphoneGuideTutorial3"></activity>
     </application>
 
 </manifest>

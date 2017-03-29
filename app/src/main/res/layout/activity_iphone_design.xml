@@ -210,6 +210,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:text="@string/help_text"
+        android:onClick="buttonOnClickHelpScreen1"
         android:textSize="18sp" />
 
 </RelativeLayout>
