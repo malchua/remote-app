@@ -67,7 +67,10 @@
         <activity android:name=".IphonePlaybackTutorial3" />
         <activity android:name=".IphonePlaybackTutorial4" />
         <activity android:name=".IphonePlaybackTutorial5" />
-        <activity android:name=".IphonePlaybackTutorial6"></activity>
+        <activity android:name=".IphonePlaybackTutorial6" />
+        <activity android:name=".IphoneRecordTutorial1" />
+        <activity android:name=".IphoneRecordTutorial2" />
+        <activity android:name=".IphoneRecordTutorial3"></activity>
     </application>
 
 </manifest>

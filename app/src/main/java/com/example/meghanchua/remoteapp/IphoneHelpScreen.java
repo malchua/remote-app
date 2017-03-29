@@ -28,7 +28,7 @@ public class IphoneHelpScreen extends AppCompatActivity {
     }
 
     public void recordhelp(View view) {
-        Intent i = new Intent(IphoneHelpScreen.this, LayeredRecordTutorial1.class);
+        Intent i = new Intent(IphoneHelpScreen.this, IphoneRecordTutorial1.class);
         IphoneHelpScreen.this.startActivity(i);
     }
 }
