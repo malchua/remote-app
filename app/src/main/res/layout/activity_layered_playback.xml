@@ -16,10 +16,9 @@
         android:text="@string/menu_playback"
         android:id="@+id/layered_playback"
         android:textSize="30sp"
-        android:layout_alignParentTop="true"
+        android:layout_below="@+id/screen"
         android:layout_toLeftOf="@+id/main_menu"
-        android:layout_toStartOf="@+id/main_menu"
-        android:layout_marginTop="6dp" />
+        android:layout_toStartOf="@+id/main_menu" />
 
     <GridLayout
         android:layout_width="wrap_content"
@@ -199,7 +198,10 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:onClick="buttonOnClickHelp"
-        android:text="@string/menu_help" />
+        android:text="@string/menu_help"
+        android:layout_below="@+id/screen"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:id="@+id/back"
@@ -210,5 +212,17 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="TextView"
+        android:textSize="30sp"
+        android:background="#000000"
+        android:textColor="#FFFFFF"/>
 
 </RelativeLayout>

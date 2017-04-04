@@ -15,9 +15,9 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/menu_guide"
         android:id="@+id/layered_guide"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:textSize="50sp"/>
+        android:textSize="50sp"
+        android:layout_below="@+id/screen"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -66,7 +66,10 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:onClick="buttonOnClickHelp"
-        android:text="@string/menu_help" />
+        android:text="@string/menu_help"
+        android:layout_below="@+id/screen"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:id="@+id/back"
@@ -125,5 +128,17 @@
             android:layout_column="2"
             android:contentDescription="@string/right_text"/>
     </GridLayout>
+
+    <TextView
+        android:id="@+id/screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="30sp"
+        android:background="#000000"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>

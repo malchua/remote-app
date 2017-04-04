@@ -15,9 +15,9 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/menu_help"
         android:id="@+id/help_title"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:textSize="50sp"/>
+        android:textSize="50sp"
+        android:layout_below="@+id/screen"
+        android:layout_centerHorizontal="true" />
 
     <GridLayout
         android:layout_width="wrap_content"
@@ -73,5 +73,17 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#000000"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
 
 </RelativeLayout>

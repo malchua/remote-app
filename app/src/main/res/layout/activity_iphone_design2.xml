@@ -58,11 +58,12 @@
         android:layout_height="55dp"
         android:text="@string/menu_guide"
         android:textSize="30sp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_above="@+id/gridLayout3"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="14dp" />
 
     <Button
         android:id="@+id/button16"
@@ -209,18 +210,18 @@
         android:scaleType="fitCenter"
         android:id="@+id/layered_record"
         android:contentDescription="@string/record_text"
-        android:layout_marginTop="40dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/textView9"
+        android:layout_alignLeft="@+id/button15"
+        android:layout_alignStart="@+id/button15" />
 
     <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/gridLayout4"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true">
+        android:layout_below="@+id/textView9"
+        android:layout_alignLeft="@+id/button17"
+        android:layout_alignStart="@+id/button17">
 
         <ImageButton
             android:id="@+id/guide_up"
@@ -262,5 +263,17 @@
             android:scaleType="fitCenter"
             android:src="@drawable/triangle_right" />
     </GridLayout>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="TextView"
+        android:textSize="30sp"
+        android:background="#000000"
+        android:textColor="#FFFFFF"/>
 
 </RelativeLayout>
