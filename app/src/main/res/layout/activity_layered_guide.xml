@@ -20,14 +20,15 @@
         android:layout_centerHorizontal="true" />
 
     <Button
+        android:id="@+id/guide_select"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/select_text"
-        android:id="@+id/guide_select"
-        android:textSize="30sp"
-        android:layout_marginBottom="13dp"
         android:layout_above="@+id/back"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp"
+        android:onClick="buttonOnClickSelect"
+        android:text="@string/select_text"
+        android:textSize="30sp" />
 
     <ImageButton
         android:layout_width="75dip"
@@ -133,12 +134,12 @@
         android:id="@+id/screen"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textSize="30sp"
-        android:background="#000000"
-        android:textColor="#FFFFFF"
-        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#000000"
+        android:text="@string/screen_guide"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
 
 </RelativeLayout>
