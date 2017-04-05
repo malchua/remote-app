@@ -14,8 +14,8 @@ public class LayeredRecordTutorial3 extends AppCompatActivity {
     }
 
     public void t1(View view) {
-        Intent i = new Intent(LayeredRecordTutorial3.this, LayeredHelpScreen.class);
-        LayeredRecordTutorial3.this.startActivity(i);
+        //Intent i = new Intent(LayeredRecordTutorial3.this, LayeredHelpScreen.class);
+        //LayeredRecordTutorial3.this.startActivity(i);
         finish();
     }
 }

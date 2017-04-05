@@ -14,8 +14,8 @@ public class IphonePlaybackTutorial6 extends AppCompatActivity {
     }
 
     public void helpScreen(View view) {
-        Intent i = new Intent(IphonePlaybackTutorial6.this, IphoneHelpScreen.class);
-        IphonePlaybackTutorial6.this.startActivity(i);
+        //Intent i = new Intent(IphonePlaybackTutorial6.this, IphoneHelpScreen.class);
+        //IphonePlaybackTutorial6.this.startActivity(i);
         finish();
     }
 }

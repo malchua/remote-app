@@ -163,7 +163,7 @@ public class LayeredPlayback extends AppCompatActivity {
         Intent helpIntent = new Intent(LayeredPlayback.this, LayeredHelpScreen.class);
         helpIntent.putExtra("user", user);
         LayeredPlayback.this.startActivity(helpIntent);
-        finish();
+        //finish();
     }
 
     public void buttonOnClickBack(View view) {

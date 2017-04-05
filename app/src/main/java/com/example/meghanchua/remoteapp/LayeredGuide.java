@@ -133,7 +133,7 @@ public class LayeredGuide extends AppCompatActivity {
         Intent helpIntent = new Intent(LayeredGuide.this, LayeredHelpScreen.class);
         helpIntent.putExtra("user", user);
         LayeredGuide.this.startActivity(helpIntent);
-        finish();
+        //finish();
     }
 
     public void buttonOnClickBack(View view) {

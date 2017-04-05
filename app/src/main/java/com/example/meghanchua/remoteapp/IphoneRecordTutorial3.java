@@ -14,8 +14,8 @@ public class IphoneRecordTutorial3 extends AppCompatActivity {
     }
 
     public void helpScreen(View view) {
-        Intent i = new Intent(IphoneRecordTutorial3.this, IphoneHelpScreen.class);
-        IphoneRecordTutorial3.this.startActivity(i);
+        //Intent i = new Intent(IphoneRecordTutorial3.this, IphoneHelpScreen.class);
+        //IphoneRecordTutorial3.this.startActivity(i);
         finish();
     }
 }

@@ -124,7 +124,7 @@ public class LayeredMain extends AppCompatActivity {
         Intent helpIntent = new Intent(LayeredMain.this, LayeredHelpScreen.class);
         helpIntent.putExtra("user", user);
         LayeredMain.this.startActivity(helpIntent);
-        finish();
+        //finish();
     }
 
     public void buttonOnClickBack(View view) {

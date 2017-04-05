@@ -28,7 +28,7 @@ public class IphoneHelpScreen extends AppCompatActivity {
     private void displayUser(UserProfile user)
     {
         TextView display = (TextView) findViewById(R.id.screen);
-        display.setText("");
+        display.setText(user.displayTV());
     }
 
     public void buttonOnClickBack(View view) {
@@ -38,18 +38,18 @@ public class IphoneHelpScreen extends AppCompatActivity {
     public void guidehelp(View view) {
         Intent i = new Intent(IphoneHelpScreen.this, IphoneGuideTutorial1.class);
         IphoneHelpScreen.this.startActivity(i);
-        finish();
+        //finish();
     }
 
     public void playbackhelp(View view) {
         Intent i = new Intent(IphoneHelpScreen.this, IphonePlaybackTutorial1.class);
         IphoneHelpScreen.this.startActivity(i);
-        finish();
+        //finish();
     }
 
     public void recordhelp(View view) {
         Intent i = new Intent(IphoneHelpScreen.this, IphoneRecordTutorial1.class);
         IphoneHelpScreen.this.startActivity(i);
-        finish();
+        //finish();
     }
 }

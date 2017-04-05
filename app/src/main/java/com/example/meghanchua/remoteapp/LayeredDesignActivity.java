@@ -62,7 +62,7 @@ public class LayeredDesignActivity extends AppCompatActivity {
         Intent helpIntent = new Intent(LayeredDesignActivity.this, LayeredHelpScreen.class);
         helpIntent.putExtra("user", user);
         LayeredDesignActivity.this.startActivity(helpIntent);
-        finish();
+        //finish();
     }
 
     public void buttonOnClickBack(View view) {

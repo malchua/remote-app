@@ -32,31 +32,33 @@ public class LayeredHelpScreen extends AppCompatActivity {
     }
 
     public void buttonOnClickMainMenu(View view) {
+        /*
         Intent mainMenuIntent = new Intent(LayeredHelpScreen.this, LayeredDesignActivity.class);
         mainMenuIntent.putExtra("user", user);
         LayeredHelpScreen.this.startActivity(mainMenuIntent);
         finish();
+        */
     }
 
     public void buttonOnClickBack(View view) {
-        //LayeredHelpScreen.this.finish();
+        LayeredHelpScreen.this.finish();
     }
 
     public void guidehelp(View view) {
         Intent i = new Intent(LayeredHelpScreen.this, LayeredGuideTutorial1.class);
         LayeredHelpScreen.this.startActivity(i);
-        finish();
+        //finish();
     }
 
     public void playbackhelp(View view) {
         Intent i = new Intent(LayeredHelpScreen.this, LayeredPlaybackTutorial1.class);
         LayeredHelpScreen.this.startActivity(i);
-        finish();
+        //finish();
     }
 
     public void recordhelp(View view) {
         Intent i = new Intent(LayeredHelpScreen.this, LayeredRecordTutorial1.class);
         LayeredHelpScreen.this.startActivity(i);
-        finish();
+        //finish();
     }
 }
