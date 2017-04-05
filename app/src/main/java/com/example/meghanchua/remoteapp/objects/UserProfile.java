@@ -16,6 +16,7 @@ public class UserProfile implements Serializable{
     private String guideDay;
     private int guideHour;
     private String guideTime;
+    private boolean onRecord;
 
     public UserProfile()
     {
@@ -30,6 +31,7 @@ public class UserProfile implements Serializable{
         this.guideDay = currDay;
         this.guideHour = currHour;
         this.guideTime = currTime;
+        this.onRecord = false;
     }
 
     public boolean hasPower()
@@ -61,7 +63,7 @@ public class UserProfile implements Serializable{
     public void decreaseCurrentChannel()
     {
         currentChannel--;
-        if (currentChannel < 0)
+        if (currentChannel <= 0)
             currentChannel = 20;
     }
 
@@ -86,9 +88,14 @@ public class UserProfile implements Serializable{
         return volume;
     }
 
-    public final boolean getOnGuide()
+    public final boolean onGuide()
     {
         return onGuide;
+    }
+
+    public final boolean onRecord()
+    {
+        return onRecord;
     }
 
     public final int getGuideChannel()
@@ -189,6 +196,7 @@ public class UserProfile implements Serializable{
     public void enterGuide()
     {
         guideChannel = currentChannel;
+        onGuide = true;
     }
 
     public void exitGuide()
@@ -197,6 +205,17 @@ public class UserProfile implements Serializable{
         guideDay = currDay;
         guideHour = currHour;
         guideTime = currTime;
+        onGuide = false;
+    }
+
+    public void enterRecord()
+    {
+        onRecord = true;
+    }
+
+    public void exitRecord()
+    {
+        onRecord = false;
     }
 
     public String displayTV()
@@ -208,4 +227,5 @@ public class UserProfile implements Serializable{
     {
         return "Guide: CH." + currentChannel + ", " + getDate();
     }
+
 }

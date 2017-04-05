@@ -211,7 +211,7 @@
         android:id="@+id/layered_record"
         android:contentDescription="@string/record_text"
         android:layout_marginTop="50dp"
-        android:layout_below="@+id/textView9"
+        android:layout_below="@+id/screen"
         android:layout_alignLeft="@+id/button15"
         android:layout_alignStart="@+id/button15" />
 
@@ -219,7 +219,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/gridLayout4"
-        android:layout_below="@+id/textView9"
+        android:layout_below="@+id/screen"
         android:layout_alignLeft="@+id/button17"
         android:layout_alignStart="@+id/button17">
 
@@ -265,7 +265,7 @@
     </GridLayout>
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/screen"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
