@@ -145,16 +145,16 @@
     </GridLayout>
 
     <Button
+        android:id="@+id/button_delete"
         android:layout_width="90dip"
         android:layout_height="90dip"
-        android:text="@string/delete_text"
-        android:scaleType="fitCenter"
-        android:id="@+id/button_record"
-        android:contentDescription="@string/record_text"
-        android:layout_below="@+id/gridLayout2"
         android:layout_alignLeft="@+id/gridLayout3"
         android:layout_alignStart="@+id/gridLayout3"
-        android:backgroundTint="@color/colorAccent"/>
+        android:layout_below="@+id/gridLayout2"
+        android:backgroundTint="@color/colorAccent"
+        android:contentDescription="@string/record_text"
+        android:scaleType="fitCenter"
+        android:text="@string/delete_text" />
 
 
 
@@ -220,9 +220,9 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:text="TextView"
-        android:textSize="30sp"
         android:background="#000000"
-        android:textColor="#FFFFFF"/>
+        android:text="@string/screen_playback"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
 
 </RelativeLayout>

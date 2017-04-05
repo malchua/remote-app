@@ -61,6 +61,7 @@
     <!-- Screen text changes -->
     <string name="screen_guide">Guide: CH.3, SAT 10 AM</string>
     <string name="screen_record">Recording</string>
+    <string name="screen_playback">Playback: On Vid 1</string>
 
 
 
