@@ -7,10 +7,11 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import com.example.meghanchua.remoteapp.objects.UserProfile;
+
 public class LayeredMain extends AppCompatActivity {
 
-    int channel=3;
-    boolean power = true;
+    private UserProfile user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +22,19 @@ public class LayeredMain extends AppCompatActivity {
         channelUpClick();
         volumeDownClick();
         volumeUpClick();
+
+        Intent intent = getIntent();
+        user = (UserProfile) intent.getSerializableExtra("user");
+
+        if (user == null)
+            user = new UserProfile();
+        displayUser(user);
+    }
+
+    private void displayUser(UserProfile user)
+    {
+        final TextView display = (TextView) findViewById(R.id.screen);
+        display.setText(user.displayTV());
     }
 
     private void powerClick() {
@@ -30,12 +44,12 @@ public class LayeredMain extends AppCompatActivity {
         {
             @Override
             public void onClick(View v) {
-                if (power) {
-                    power = false;
+                if (user.hasPower()) {
+                    user.powerOff();
                     changingText.setText("TV: Turned Off");
                 }
                 else {
-                    power = true;
+                    user.powerOn();
                     changingText.setText("TV: Turned On");
                 }
             }
@@ -49,11 +63,9 @@ public class LayeredMain extends AppCompatActivity {
         {
             @Override
             public void onClick(View v) {
-                if (power) {
-                    channel++;
-                    if (channel > 20)
-                        channel = 1;
-                    changingText.setText("TV: CH." + channel);
+                if (user.hasPower()) {
+                    user.increaseCurrentChannel();
+                    changingText.setText("TV: CH." + user.getCurrentChannel());
                 }
             }
         });
@@ -66,11 +78,9 @@ public class LayeredMain extends AppCompatActivity {
         {
             @Override
             public void onClick(View v) {
-                if (power) {
-                    channel--;
-                    if (channel < 1)
-                        channel = 20;
-                    changingText.setText("TV: CH." + channel);
+                if (user.hasPower()) {
+                    user.decreaseCurrentChannel();
+                    changingText.setText("TV: CH." + user.getCurrentChannel());
                 }
             }
         });
@@ -83,7 +93,7 @@ public class LayeredMain extends AppCompatActivity {
         {
             @Override
             public void onClick(View v) {
-                if (power)
+                if (user.hasPower())
                     changingText.setText("TV: Vol. increased");
             }
         });
@@ -96,7 +106,7 @@ public class LayeredMain extends AppCompatActivity {
         {
             @Override
             public void onClick(View v) {
-                if (power)
+                if (user.hasPower())
                     changingText.setText("TV: Vol. decreased");
             }
         });
@@ -105,12 +115,14 @@ public class LayeredMain extends AppCompatActivity {
 
     public void buttonOnClickMainMenu(View view) {
         Intent mainMenuIntent = new Intent(LayeredMain.this, LayeredDesignActivity.class);
+        mainMenuIntent.putExtra("user", user);
         LayeredMain.this.startActivity(mainMenuIntent);
         finish();
     }
 
     public void buttonOnClickHelp(View view) {
         Intent helpIntent = new Intent(LayeredMain.this, LayeredHelpScreen.class);
+        helpIntent.putExtra("user", user);
         LayeredMain.this.startActivity(helpIntent);
         finish();
     }
@@ -118,6 +130,7 @@ public class LayeredMain extends AppCompatActivity {
     public void buttonOnClickBack(View view) {
         //LayeredMain.this.finish();
         Intent i = new Intent(LayeredMain.this, LayeredDesignActivity.class);
+        i.putExtra("user", user);
         LayeredMain.this.startActivity(i);
         finish();
     }

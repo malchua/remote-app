@@ -8,12 +8,11 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import com.example.meghanchua.remoteapp.objects.UserProfile;
+
 public class LayeredGuide extends AppCompatActivity {
 
-    int channel = 3;
-    int hour = 10;
-    String time = " AM";
-    String day = "SAT ";
+    private UserProfile user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +23,20 @@ public class LayeredGuide extends AppCompatActivity {
         downClick();
         leftClick();
         rightClick();
+
+        Intent intent = getIntent();
+        user = (UserProfile) intent.getSerializableExtra("user");
+
+        if (user == null)
+            user = new UserProfile();
+        user.enterGuide();
+        displayUser(user);
+    }
+
+    private void displayUser(UserProfile user)
+    {
+        TextView display = (TextView) findViewById(R.id.screen);
+        display.setText(user.displayGuide());
     }
 
     private void upClick() {
@@ -33,10 +46,8 @@ public class LayeredGuide extends AppCompatActivity {
         {
             @Override
             public void onClick(View v) {
-                channel--;
-                if (channel<=0)
-                    channel = 20;
-                changingText.setText("Guide: CH." + channel + ", " + day + hour + time);
+                user.increaseGuideChannel();
+                changingText.setText("Guide: CH." + user.getGuideChannel() + ", " + user.getDate());
             }
         });
     }
@@ -48,10 +59,8 @@ public class LayeredGuide extends AppCompatActivity {
         {
             @Override
             public void onClick(View v) {
-                channel++;
-                if (channel>=21)
-                    channel = 1;
-                changingText.setText("Guide: CH." + channel + ", " + day + hour + time);
+                user.decreaseGuideChannel();
+                changingText.setText("Guide: CH." + user.getGuideChannel() + ", " + user.getDate());
             }
         });
     }
@@ -63,24 +72,13 @@ public class LayeredGuide extends AppCompatActivity {
         {
             @Override
             public void onClick(View v) {
-                if (day == "SAT " && hour-1==9 && time==" AM") {
+                if (user.getDay().equals("SAT") && user.getGuideHour()-1==9 && user.getGuideTime().equals("AM")) {
                     ; // can't go back in time
                 }
                 else {
-                    hour--;
-                    if (hour<=0) {
-                        hour=12;
-                        if (time==" AM") {
-                            time = " PM";
-                            if (day=="SUN ")
-                                day = "SAT ";
-                        }
-                        else {
-                            time = " AM";
-                        }
-                    }
+                    user.decreaseGuideHour();
                 }
-                changingText.setText("Guide: CH." + channel + ", " + day + hour + time);
+                changingText.setText("Guide: CH." + user.getGuideChannel() + ", " + user.getDate());
             }
         });
     }
@@ -92,25 +90,13 @@ public class LayeredGuide extends AppCompatActivity {
         {
             @Override
             public void onClick(View v) {
-                if (day == "SUN " && hour+1==12 && time==" PM") {
+                if (user.getDay().equals("SUN") && user.getGuideHour()+1==12 && user.getGuideTime().equals("PM")) {
                     ; // can't go forward in time
                 }
                 else {
-                    hour++;
-                    if (hour>12)
-                        hour=1;
-                    if (hour==12) {
-                        if (time==" AM") {
-                            time = " PM";
-                        }
-                        else {
-                            time = " AM";
-                            if (day=="SAT ")
-                                day = "SUN ";
-                        }
-                    }
+                    user.increaseGuideHour();
                 }
-                changingText.setText("Guide: CH." + channel + ", " + day + hour + time);
+                changingText.setText("Guide: CH." + user.getGuideChannel() + ", " + user.getDate());
             }
         });
     }
@@ -122,32 +108,39 @@ public class LayeredGuide extends AppCompatActivity {
         {
             @Override
             public void onClick(View v) {
-                changingText.setText("Record: CH." + channel + ", " + day + hour + time);
+                changingText.setText("Record: CH." + user.getGuideChannel() + ", " + user.getDate());
             }
         });
     }
 
     public void buttonOnClickSelect(View view) {
+        user.selectChannel();
         Intent i = new Intent(LayeredGuide.this, LayeredDesignActivity.class);
+        i.putExtra("user", user);
         LayeredGuide.this.startActivity(i);
         finish();
     }
 
     public void buttonOnClickMainMenu(View view) {
+        user.exitGuide();
         Intent mainMenuIntent = new Intent(LayeredGuide.this, LayeredDesignActivity.class);
+        mainMenuIntent.putExtra("user", user);
         LayeredGuide.this.startActivity(mainMenuIntent);
         finish();
     }
 
     public void buttonOnClickHelp(View view) {
         Intent helpIntent = new Intent(LayeredGuide.this, LayeredHelpScreen.class);
+        helpIntent.putExtra("user", user);
         LayeredGuide.this.startActivity(helpIntent);
         finish();
     }
 
     public void buttonOnClickBack(View view) {
         //LayeredGuide.this.finish();
+        user.exitGuide();
         Intent i = new Intent(LayeredGuide.this, LayeredDesignActivity.class);
+        i.putExtra("user", user);
         LayeredGuide.this.startActivity(i);
         finish();
     }

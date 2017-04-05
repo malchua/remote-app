@@ -8,7 +8,11 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import com.example.meghanchua.remoteapp.objects.UserProfile;
+
 public class LayeredPlayback extends AppCompatActivity {
+
+    private UserProfile user;
     int item = 1;
     boolean playing = false;
 
@@ -24,6 +28,12 @@ public class LayeredPlayback extends AppCompatActivity {
         stopClick();
         playClick();
         deleteClick();
+
+        Intent intent = getIntent();
+        user = (UserProfile) intent.getSerializableExtra("user");
+
+        if (user == null)
+            user = new UserProfile();
     }
 
     private void deleteClick() {
@@ -144,12 +154,14 @@ public class LayeredPlayback extends AppCompatActivity {
 
     public void buttonOnClickMainMenu(View view) {
         Intent mainMenuIntent = new Intent(LayeredPlayback.this, LayeredDesignActivity.class);
+        mainMenuIntent.putExtra("user", user);
         LayeredPlayback.this.startActivity(mainMenuIntent);
         finish();
     }
 
     public void buttonOnClickHelp(View view) {
         Intent helpIntent = new Intent(LayeredPlayback.this, LayeredHelpScreen.class);
+        helpIntent.putExtra("user", user);
         LayeredPlayback.this.startActivity(helpIntent);
         finish();
     }
@@ -157,6 +169,7 @@ public class LayeredPlayback extends AppCompatActivity {
     public void buttonOnClickBack(View view) {
         //LayeredPlayback.this.finish();
         Intent i = new Intent(LayeredPlayback.this, LayeredDesignActivity.class);
+        i.putExtra("user", user);
         LayeredPlayback.this.startActivity(i);
         finish();
     }
