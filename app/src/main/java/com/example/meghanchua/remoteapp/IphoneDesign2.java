@@ -28,7 +28,7 @@ public class IphoneDesign2 extends AppCompatActivity {
         rightClick();
         buttonOnClickSelect();
 
-        recordedClick();
+        recordListClick();
         rewindClick();
         forwardClick();
         pauseClick();
@@ -57,8 +57,12 @@ public class IphoneDesign2 extends AppCompatActivity {
         {
             @Override
             public void onClick(View v) {
-                user.enterGuide();
-                changingText.setText("Guide: CH." + user.getGuideChannel() + ", " + user.getDate());
+                if (!user.onGuide()) {
+                    user.exitRecord();
+                    user.enterGuide();
+                    item = 1;
+                    changingText.setText("Guide: CH." + user.getGuideChannel() + ", " + user.getDate());
+                }
             }
         });
     }
@@ -74,6 +78,14 @@ public class IphoneDesign2 extends AppCompatActivity {
                     user.increaseGuideChannel();
                     changingText.setText("Guide: CH." + user.getGuideChannel() + ", " + user.getDate());
                 }
+                else if (user.onRecord()) {
+                    if (!playing) {
+                        item--;
+                        if (item < 1)
+                            item = 1;
+                        changingText.setText("Playback: On Vid " + item);
+                    }
+                }
             }
         });
     }
@@ -88,6 +100,14 @@ public class IphoneDesign2 extends AppCompatActivity {
                 if (user.onGuide()) {
                     user.decreaseGuideChannel();
                     changingText.setText("Guide: CH." + user.getGuideChannel() + ", " + user.getDate());
+                }
+                else if (user.onRecord()) {
+                    if (!playing) {
+                        item++;
+                        if (item > 10)
+                            item = 10;
+                        changingText.setText("Playback: On Vid " + item);
+                    }
                 }
             }
         });
@@ -163,15 +183,18 @@ public class IphoneDesign2 extends AppCompatActivity {
         });
     }
 
-    private void recordedClick() {
+    private void recordListClick() {
         final TextView changingText = (TextView) findViewById(R.id.screen);
         Button changeTextButton = (Button) findViewById(R.id.button16);
         changeTextButton.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v) {
-                user.enterRecord();
-                changingText.setText("Playback: On Vid 1");
+                if (!user.onRecord()) {
+                    user.exitGuide();
+                    user.enterRecord();
+                    changingText.setText("Playback: On Vid 1");
+                }
             }
         });
     }
@@ -255,6 +278,8 @@ public class IphoneDesign2 extends AppCompatActivity {
                 if (user.onRecord() || user.onGuide()) {
                     user.exitGuide();
                     user.exitRecord();
+                    playing = false;
+                    item = 1;
                     changingText.setText("Exit to TV: CH." + user.getCurrentChannel());
                 }
             }

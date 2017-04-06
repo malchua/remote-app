@@ -191,6 +191,7 @@ public class UserProfile implements Serializable{
         guideDay = currDay;
         guideHour = currHour;
         guideTime = currTime;
+        onGuide = false;
     }
 
     public void enterGuide()
