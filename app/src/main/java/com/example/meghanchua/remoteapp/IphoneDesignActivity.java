@@ -124,6 +124,5 @@ public class IphoneDesignActivity extends AppCompatActivity {
         Intent iphoneDesignActivityIntent = new Intent(IphoneDesignActivity.this, IphoneHelpScreen.class);
         iphoneDesignActivityIntent.putExtra("user", user);
         IphoneDesignActivity.this.startActivity(iphoneDesignActivityIntent);
-        finish();
     }
 }
